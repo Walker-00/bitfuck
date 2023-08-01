@@ -1,0 +1,8 @@
+! Example program for how to use `deb` keyword in debugging code
+! `deb` keyword use to print the program's current status to debug
+
+deb
+ptp inc deb
+ptp inc inc inc deb
+ptp inc inc inc inc inc deb
+ask deb

@@ -1,0 +1,22 @@
+! Example program that reads a line of text then prints it in reverse (like Government News Channel In Myanmar).
+
+! Decrement value pointed to ASCII value of '\n'.
+dec dec dec dec dec dec dec dec dec dec
+
+! Keep reading into working memory until '\n' (new line) character is encountered.
+lps
+    ! Increment pointed value to its original value
+    inc inc inc inc inc inc inc inc inc inc
+    ! Read a character to the next byte.
+    ptp ask
+    ! Decrement it by 10 ('\n') so that when we read a new line, the value
+    ! pointed by the data pointer is at the end of the loop iteration will be 0,
+    ! and the loop will stop.
+    dec dec dec dec dec dec dec dec dec dec
+lpe
+
+! Print the line in reverse. (Design is very MRTV)
+ptd lps out ptd lpe
+
+! Print new line.
+inc inc inc inc inc inc inc inc inc inc out
