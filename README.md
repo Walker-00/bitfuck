@@ -1,3 +1,9 @@
+<div align="center"> 
+
+[![Rust](https://github.com/Walker-00/bitfuck/actions/workflows/rust.yml/badge.svg)](https://github.com/Walker-00/bitfuck/actions/workflows/rust.yml)
+
+</div>
+
 # bit-fuck
 Just a esoteric language interpreter with Rust
 
@@ -6,6 +12,7 @@ Just a esoteric language interpreter with Rust
 - BitFuck is just a esoteric programming language like BrainFuck
 - This interpreter is written in Rust
 - BitFuck has only 10 keywords, 1 is for comment
+- In this Interpreter implementation default Memory is 99999 bytes
 
 ## [Require]
 
