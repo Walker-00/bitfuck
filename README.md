@@ -1,6 +1,7 @@
 <div align="center"> 
 
-[![Rust](https://github.com/Walker-00/bitfuck/actions/workflows/rust.yml/badge.svg)](https://github.com/Walker-00/bitfuck/actions/workflows/rust.yml)
+[![Rust Building](https://github.com/Walker-00/bitfuck/actions/workflows/rust.yml/badge.svg)](https://github.com/Walker-00/bitfuck/actions/workflows/rust.yml)
+[![Clippy Code Analyze](https://github.com/Walker-00/bitfuck/actions/workflows/rust-clippy.yml/badge.svg)](https://github.com/Walker-00/bitfuck/actions/workflows/rust-clippy.yml)
 
 </div>
 
