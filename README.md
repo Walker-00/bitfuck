@@ -5,11 +5,11 @@
 </div>
 
 # bitfuck
-Just a esoteric language interpreter with Rust
+Just an esoteric language interpreter with Rust
 
 ## [Info]
 
-- BitFuck is just a esoteric programming language like BrainFuck
+- BitFuck is just an esoteric programming language like BrainFuck
 - This interpreter is written in Rust
 - BitFuck has only 10 keywords, 1 is for comment
 - In this Interpreter implementation default Memory is 99999 bytes
