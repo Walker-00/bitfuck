@@ -97,16 +97,16 @@ impl<'a> BitfuckInterpreter<'a> {
 
     fn debug_handler(&self) {
         let data_pointer_addr = self.source_code.as_ptr() as usize + self.data_pointer;
-        let memory_addr = self.memory.as_ptr() as usize + self.data_pointer;
+        let memory_addr = self.memory.as_ptr() as usize + self.data_pointer + 0x2d;
         let memory_value = self.memory[self.data_pointer];
 
         let mut debug_output = String::new();
         write!(
             &mut debug_output,
             "\x1b[1;34mdebug: \x1b[0mip \x1b[36m=\x1b[0m \x1b[33m0x{:x}\x1b[0m \x1b[90m(\x1b[0mprogram \x1b[36m+\x1b[0m \x1b[33m0x{:x}\x1b[0m\x1b[90m)\x1b[36m;\x1b[0m dp\x1b[36m\x1b[0m \x1b[36m=\x1b[0m \x1b[33m0x{:x}\x1b[0m \x1b[90m(\x1b[0mmemory \x1b[36m+\x1b[0m \x1b[33m0x{:x}\x1b[0m\x1b[90m)\x1b[0m\x1b[36m;\x1b[0m \x1b[36m*\x1b[0mdp \x1b[36m=\x1b[0m \x1b[33m{}\x1b[0m",
-            data_pointer_addr,
-            self.data_pointer,
             memory_addr,
+            self.data_pointer + 0x2d,
+            data_pointer_addr,
             self.data_pointer,
             memory_value
         )
